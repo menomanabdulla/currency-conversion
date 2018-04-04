@@ -19,24 +19,32 @@
 		
 		<!-- Custom-Stylesheet -->
 		<link href="css/style.css" rel="stylesheet">
-		
-		<!-- Responsive Stylesheet -->
-		<link href="css/responsive.css" rel="stylesheet">
-		
 	</head>
 	<body>
-		<div class="cur-select-block" id="me">
-			<select id="currencyOptions">
-			  <option value="default-value">Default</option>
-			  <option value="Usd">Val 1</option>
-			  <option value="EUR">Val 2</option>
-			  <option value="SAR">Val 2</option>
-			  <option value="INR">Val 3</option>
-			  <option value="IRR">Val 4</option>
-			  <option value="ZWD">Val 4</option>
-			  <option value="VND">Val 4</option>
-			</select>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="main-block">
+						<div class="cur-select-block" id="me">
+							<select class="currency-options" id="currencyOptions">
+							  <option disabled="disabled" selected="selected">Default</option>
+							  <option value="Usd">USD</option>
+							  <option value="EUR">EUR</option>
+							  <option value="SAR">SAR</option>
+							  <option value="INR">INR</option>
+							  <option value="IRR">IRR</option>
+							  <option value="ZWD">ZWD</option>
+							  <option value="VND">VND</option>
+							</select>
+							<input type="text" id="ammount" placeholder="Enter ammount">
+							
+							<h1 class="output-text" id="resultBlock">Result</h1>
+						</div>
+					</div><!-- main-block -->
+				</div>
+			</div>
 		</div>
+		
 		<!-- Custom-Scripts -->
 		<script src="js/custom.js"></script>
 	</body>
